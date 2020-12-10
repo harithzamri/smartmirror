@@ -2,7 +2,6 @@ import styled from "styled-components/macro";
 import { Link } from "react-router-dom";
 
 export const Container = styled.nav`
-  background: #1998f6;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -11,6 +10,12 @@ export const Container = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
+`;
+
+export const Logo = styled.img`
+  height: 63px;
+  width: 150px;
+  margin: 12px 20px;
 `;
 
 export const Inner = styled.div`
@@ -38,7 +43,7 @@ export const Title = styled(Link)`
 `;
 
 export const TextLink = styled(Link)`
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   text-decoration: none;

@@ -1,14 +1,14 @@
 import React from "react";
-import About from "../components/about";
+import JumbotronContainer from "../container/jumbotron";
 
-function AboutContainer() {
+function About() {
   return (
-    <About>
-      <About.SmallText>
-        Your Factory automation solutions provider
-      </About.SmallText>
-    </About>
+    <JumbotronContainer
+      image="about"
+      text="Your Factory automation solutions provider"
+      title="Greatech"
+    />
   );
 }
 
-export default AboutContainer;
+export default About;

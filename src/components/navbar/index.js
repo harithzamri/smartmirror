@@ -7,8 +7,9 @@ import {
   NavMenu,
   NavMenuActive,
   Item,
-  Title,
+  Logo,
 } from "./styles/navbar";
+import { Link as ReactRouterLink } from "react-router-dom";
 
 const ClickContext = createContext();
 
@@ -23,12 +24,11 @@ export default function Nav({ children, ...restProps }) {
   );
 }
 
-Nav.Title = function NavTitle({ children, ...restProps }) {
+Nav.Logo = function NavLogo({ to, ...restProps }) {
   return (
-    <Title {...restProps}>
-      {children}
-      <i className="fab fa-typo3" />
-    </Title>
+    <ReactRouterLink to={to}>
+      <Logo {...restProps} />
+    </ReactRouterLink>
   );
 };
 
